@@ -13,7 +13,7 @@ class ProductListUIVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        BizApi.sharedApi.fetchJSONDataFromURL(NSURL(string: appvar.productApi)!, {(_data:NSDictionary?, _err:NSError?) -> Void in
+        BizApi.sharedApi.fetchJSONDataFromURL(NSURL(string: appvar.productApi)!, {(_data:NSDictionary?, _err:NSError?)->Void in
             NSLog("Error: %@", _err!.localizedDescription)
         })
         

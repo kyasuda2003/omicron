@@ -32,10 +32,10 @@ class BizApi: NSObject {
         return _static.instance!
     }
     
-    func fetchJSONDataFromURL(url: NSURL, withCallback callback:((NSDictionary?,NSError)->Void)!){
-        if (callback != nil){
-            NSException.raise("Invalid callback handler", format: "callback %@ is invalid", arguments: getVaList(["POEAPI > fetchJSONDataFromURL"]))
-        }
+    func fetchJSONDataFromURL(url: NSURL, withCallback callback: (NSDictionary?,NSError?) -> Void) {
+        //if callback {
+        //NSException.raise("Invalid callback handler", format: "callback %@ is invalid", arguments: getVaList(["BizApi > fetchJSONDataFromURL"]))
+        //}
         
         NSURLConnection.sendAsynchronousRequest(NSURLRequest(URL: url), queue: NSOperationQueue.mainQueue(),
             completionHandler: {(res:NSURLResponse!, data:NSData!, err:NSError!) -> Void in
@@ -44,7 +44,7 @@ class BizApi: NSObject {
                     if data.length>0&&err==nil{
                         var _err:NSError?
                         var toDict:NSDictionary=NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &_err) as NSDictionary
-                        callback(toDict, _err!)
+                        callback(toDict, _err)
                         
                     }
                     else {
