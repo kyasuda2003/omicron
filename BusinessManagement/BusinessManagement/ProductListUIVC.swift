@@ -10,11 +10,16 @@ import UIKit
 
 class ProductListUIVC: UITableViewController {
 
+    var productDict = NSDictionary()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         BizApi.sharedApi.fetchJSONDataFromURL(NSURL(string: appvar.productApi)!, {(_data:NSDictionary?, _err:NSError?)->Void in
-            NSLog("Error: %@", _err!.localizedDescription)
+            if _err != nil {
+               NSLog("Error: %@", _err!.description)
+        
+            }
         })
         
         // Uncomment the following line to preserve selection between presentations
