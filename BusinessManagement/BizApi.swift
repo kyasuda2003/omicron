@@ -9,7 +9,7 @@
 import UIKit
 
 struct appvar {
-    static var productApi="http://pacificoasis.com/objs/products"
+    static var productApi="http://pacificoasis.com/obj/products"
 }
 
 

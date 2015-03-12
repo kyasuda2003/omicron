@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F7EF512C1AB0294100D3D64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF512B1AB0294100D3D64B /* AppDelegate.swift */; };
 		F7EF512F1AB0294100D3D64B /* BusinessManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7EF512D1AB0294100D3D64B /* BusinessManagement.xcdatamodeld */; };
-		F7EF51311AB0294100D3D64B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF51301AB0294100D3D64B /* ViewController.swift */; };
 		F7EF51341AB0294100D3D64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EF51321AB0294100D3D64B /* Main.storyboard */; };
 		F7EF51361AB0294100D3D64B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7EF51351AB0294100D3D64B /* Images.xcassets */; };
 		F7EF51391AB0294100D3D64B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7EF51371AB0294100D3D64B /* LaunchScreen.xib */; };
@@ -33,7 +32,6 @@
 		F7EF512A1AB0294100D3D64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7EF512B1AB0294100D3D64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7EF512E1AB0294100D3D64B /* BusinessManagement.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BusinessManagement.xcdatamodel; sourceTree = "<group>"; };
-		F7EF51301AB0294100D3D64B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F7EF51331AB0294100D3D64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7EF51351AB0294100D3D64B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F7EF51381AB0294100D3D64B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,7 +84,6 @@
 				F7EF514E1AB0299500D3D64B /* BizApi.swift */,
 				F7EF512B1AB0294100D3D64B /* AppDelegate.swift */,
 				F7EF51501AB02A1C00D3D64B /* ProductListUIVC.swift */,
-				F7EF51301AB0294100D3D64B /* ViewController.swift */,
 				F7EF51321AB0294100D3D64B /* Main.storyboard */,
 				F7EF51351AB0294100D3D64B /* Images.xcassets */,
 				F7EF51371AB0294100D3D64B /* LaunchScreen.xib */,
@@ -221,7 +218,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7EF51311AB0294100D3D64B /* ViewController.swift in Sources */,
 				F7EF512F1AB0294100D3D64B /* BusinessManagement.xcdatamodeld in Sources */,
 				F7EF51511AB02A1C00D3D64B /* ProductListUIVC.swift in Sources */,
 				F7EF514F1AB0299500D3D64B /* BizApi.swift in Sources */,
@@ -419,6 +415,7 @@
 				F7EF514A1AB0294100D3D64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F7EF514B1AB0294100D3D64B /* Build configuration list for PBXNativeTarget "BusinessManagementTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +424,7 @@
 				F7EF514D1AB0294100D3D64B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
