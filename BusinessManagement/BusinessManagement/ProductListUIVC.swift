@@ -20,6 +20,8 @@ class ProductListUIVC: UITableViewController {
                NSLog("Error: %@", _err!.description)
         
             }
+            NSLog("The Api call is successful %@", appvar.productApi)
+            self.productDict = _data!
         })
         
         // Uncomment the following line to preserve selection between presentations
@@ -47,8 +49,7 @@ class ProductListUIVC: UITableViewController {
         // Return the number of rows in the section.
         return 0
     }
-
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
 
@@ -56,7 +57,31 @@ class ProductListUIVC: UITableViewController {
 
         return cell
     }
-    */
+    
+    func basicCellAtIndexPath(indexPath:NSIndexPath) -> BasicCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier(basicCellIdentifier) as BasicCell
+        setTitleForCell(cell, indexPath: indexPath)
+        setSubtitleForCell(cell, indexPath: indexPath)
+        return cell
+    }
+    
+    func setTitleForCell(cell:BasicCell, indexPath:NSIndexPath) {
+        let item = items[indexPath.row] as RSSItem
+        cell.titleLabel.text = item.title ?? "[No Title]"
+    }
+    
+    func setSubtitleForCell(cell:BasicCell, indexPath:NSIndexPath) {
+        let item = items[indexPath.row] as RSSItem
+        var subtitle: NSString! = item.mediaText ?? item.mediaDescription
+        
+        // Some subtitles are really long, so only display the first 200 characters
+        if subtitle != nil {
+            cell.subtitleLabel.text = subtitle.length > 200 ? "\(subtitle.substringToIndex(200))..." : subtitle
+        } else {
+            cell.subtitleLabel.text = ""
+        }
+    }
+
 
     /*
     // Override to support conditional editing of the table view.
