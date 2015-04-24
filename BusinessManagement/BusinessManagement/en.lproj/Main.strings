@@ -1,0 +1,33 @@
+
+/* Class = "IBUILabel"; text = "Description"; ObjectID = "9cA-ie-ToY"; */
+"9cA-ie-ToY.text" = "Description";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "Hfq-fR-SCT"; */
+"Hfq-fR-SCT.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "Product Catalog"; ObjectID = "MP2-4x-Mby"; */
+"MP2-4x-Mby.title" = "Product Catalog";
+
+/* Class = "IBUILabel"; text = "Length:"; ObjectID = "MSW-ul-taV"; */
+"MSW-ul-taV.text" = "Length:";
+
+/* Class = "IBUILabel"; text = "Subtitle"; ObjectID = "Sl1-O4-UXM"; */
+"Sl1-O4-UXM.text" = "Subtitle";
+
+/* Class = "IBUILabel"; text = "Height:"; ObjectID = "dT1-eo-8yp"; */
+"dT1-eo-8yp.text" = "Height:";
+
+/* Class = "IBUILabel"; text = "Pack:"; ObjectID = "huO-O6-g0r"; */
+"huO-O6-g0r.text" = "Pack:";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "it4-y4-ZTk"; */
+"it4-y4-ZTk.text" = "Title";
+
+/* Class = "IBUINavigationItem"; title = "POE Main Option"; ObjectID = "j76-r8-MYy"; */
+"j76-r8-MYy.title" = "POE Main Option";
+
+/* Class = "IBUINavigationItem"; title = "Product Details"; ObjectID = "kiQ-cl-uaQ"; */
+"kiQ-cl-uaQ.title" = "Product Details";
+
+/* Class = "IBUILabel"; text = "Product Catalog"; ObjectID = "x5p-b9-gWX"; */
+"x5p-b9-gWX.text" = "Product Catalog";

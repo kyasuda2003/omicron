@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F72D077B1AD58EEA00D29BD3 /* BizApiURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72D077A1AD58EEA00D29BD3 /* BizApiURLSession.swift */; };
+		F7ABC2E91AB6463C00C44FF8 /* PlainProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC2E81AB6463C00C44FF8 /* PlainProductCell.swift */; };
+		F7ABC3001ABE886D00C44FF8 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC2FF1ABE886D00C44FF8 /* MBProgressHUD.m */; };
+		F7ABC3041ABF2D2500C44FF8 /* ImageProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ABC3031ABF2D2500C44FF8 /* ImageProductCell.swift */; };
 		F7EF512C1AB0294100D3D64B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF512B1AB0294100D3D64B /* AppDelegate.swift */; };
 		F7EF512F1AB0294100D3D64B /* BusinessManagement.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7EF512D1AB0294100D3D64B /* BusinessManagement.xcdatamodeld */; };
 		F7EF51341AB0294100D3D64B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7EF51321AB0294100D3D64B /* Main.storyboard */; };
@@ -28,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F72D077A1AD58EEA00D29BD3 /* BizApiURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BizApiURLSession.swift; path = ../BizApiURLSession.swift; sourceTree = "<group>"; };
+		F7ABC2E81AB6463C00C44FF8 /* PlainProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainProductCell.swift; sourceTree = "<group>"; };
+		F7ABC2FD1ABE886C00C44FF8 /* BusinessManagement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BusinessManagement-Bridging-Header.h"; sourceTree = "<group>"; };
+		F7ABC2FE1ABE886D00C44FF8 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../../../MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		F7ABC2FF1ABE886D00C44FF8 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../../../MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		F7ABC3031ABF2D2500C44FF8 /* ImageProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageProductCell.swift; path = ../ImageProductCell.swift; sourceTree = "<group>"; };
+		F7ABC3061ABF415400C44FF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F7EF51261AB0294100D3D64B /* BusinessManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BusinessManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EF512A1AB0294100D3D64B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7EF512B1AB0294100D3D64B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +71,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7ABC2FC1ABE881400C44FF8 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				F7ABC2FE1ABE886D00C44FF8 /* MBProgressHUD.h */,
+				F7ABC2FF1ABE886D00C44FF8 /* MBProgressHUD.m */,
+				F7ABC2FD1ABE886C00C44FF8 /* BusinessManagement-Bridging-Header.h */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		F7EF511D1AB0294100D3D64B = {
 			isa = PBXGroup;
 			children = (
@@ -81,9 +102,13 @@
 		F7EF51281AB0294100D3D64B /* BusinessManagement */ = {
 			isa = PBXGroup;
 			children = (
+				F7ABC2FC1ABE881400C44FF8 /* MBProgressHUD */,
 				F7EF514E1AB0299500D3D64B /* BizApi.swift */,
+				F72D077A1AD58EEA00D29BD3 /* BizApiURLSession.swift */,
 				F7EF512B1AB0294100D3D64B /* AppDelegate.swift */,
 				F7EF51501AB02A1C00D3D64B /* ProductListUIVC.swift */,
+				F7ABC2E81AB6463C00C44FF8 /* PlainProductCell.swift */,
+				F7ABC3031ABF2D2500C44FF8 /* ImageProductCell.swift */,
 				F7EF51321AB0294100D3D64B /* Main.storyboard */,
 				F7EF51351AB0294100D3D64B /* Images.xcassets */,
 				F7EF51371AB0294100D3D64B /* LaunchScreen.xib */,
@@ -219,9 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7EF512F1AB0294100D3D64B /* BusinessManagement.xcdatamodeld in Sources */,
+				F7ABC3001ABE886D00C44FF8 /* MBProgressHUD.m in Sources */,
 				F7EF51511AB02A1C00D3D64B /* ProductListUIVC.swift in Sources */,
 				F7EF514F1AB0299500D3D64B /* BizApi.swift in Sources */,
+				F7ABC3041ABF2D2500C44FF8 /* ImageProductCell.swift in Sources */,
 				F7EF512C1AB0294100D3D64B /* AppDelegate.swift in Sources */,
+				F7ABC2E91AB6463C00C44FF8 /* PlainProductCell.swift in Sources */,
+				F72D077B1AD58EEA00D29BD3 /* BizApiURLSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +277,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F7EF51331AB0294100D3D64B /* Base */,
+				F7ABC3061ABF415400C44FF8 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -346,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BusinessManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusinessManagement/BusinessManagement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -356,9 +389,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BusinessManagement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BusinessManagement/BusinessManagement-Bridging-Header.h";
 			};
 			name = Release;
 		};

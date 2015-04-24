@@ -10,6 +10,8 @@ import UIKit
 
 struct appvar {
     static var productApi="http://pacificoasis.com/obj/products"
+    static var imgApi="http://pacificoasis.com/obj/photos"
+    static var imgBlobApi="http://pacificoasis.com/media/photos"
 }
 
 
@@ -32,23 +34,22 @@ class BizApi: NSObject {
         return _static.instance!
     }
     
-    func fetchJSONDataFromURL(url: NSURL, withCallback callback: (NSDictionary?,NSError?) -> Void) {
+    func fetchJSONDataFromURL(url: NSURL, withCallback callback: (NSData?,NSError?) -> Void) -> Void {
         //if callback {
         //NSException.raise("Invalid callback handler", format: "callback %@ is invalid", arguments: getVaList(["BizApi > fetchJSONDataFromURL"]))
         //}
         
         NSURLConnection.sendAsynchronousRequest(NSURLRequest(URL: url), queue: NSOperationQueue.mainQueue(),
-            completionHandler: {(res:NSURLResponse!, data:NSData!, err:NSError!) -> Void in
-                let statusCode=(res as? NSHTTPURLResponse)?.statusCode ?? -1
+            completionHandler: {(_res:NSURLResponse!, _data:NSData!, _err:NSError!) -> Void in
+                let statusCode=(_res as? NSHTTPURLResponse)?.statusCode ?? -1
                 if statusCode>=200&&statusCode<300{
-                    if data.length>0&&err==nil{
-                        var _err:NSError?
-                        var toDict:NSDictionary=NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &_err) as NSDictionary
-                        callback(toDict, _err)
-                        
+                    if _err==nil{
+                        //var _err:NSError?
+                        //var toDict:NSDictionary=NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &_err) as NSDictionary
+                        callback(_data, _err)
                     }
                     else {
-                        callback(nil,err)
+                        callback(nil,_err)
                     }
                 }
                 else{
